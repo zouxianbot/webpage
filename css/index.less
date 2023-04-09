@@ -1,0 +1,450 @@
+// 通用栏样式
+.header {
+	height: 40px;
+	border: 1px solid grey;
+	.row {
+		height: 100%;
+		div {
+			height: 100%;
+    		line-height: 40px;
+    		border-right: 1px solid gray;
+    		text-align: center;
+    		&:nth-child(n+3) {
+    			a {
+    				margin-left: 10px;
+    			}
+    		}
+    		&:first-child a img{
+				display: none;
+    		}
+    		&:first-child a:hover img{
+    			position: absolute;
+    			display: block;
+    			left: 95px;
+    			top: 40px;
+    		}
+    		a {
+				font-size: 12px;
+				color: grey;
+				text-decoration: none;
+    		}
+		}
+	}
+}
+// 导航栏样式
+.navbar {
+	.wjsfont-logo {
+		font-size: 50px;
+		color: red;
+		transform: translateY(-15px);
+	}
+	.wjsfont-name {
+		font-size: 70px;
+		color: black;
+		transform: translateY(-5px);
+	}
+}
+// 轮播图样式
+.banner {
+	.banner_a {
+		display: block;
+		height: 410px;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		&.image_a {
+			background-image: url('../images/slide_01_2000x410.jpg');
+		}
+		&.image_b {
+			background-image: url('../images/slide_02_2000x410.jpg');
+		}
+		&.image_c {
+			background-image: url('../images/slide_03_2000x410.jpg');
+		}
+		&.image_d {
+			background-image: url('../images/slide_04_2000x410.jpg');
+		}
+	}
+	.a_mobile {
+		display: block;
+		width: 100%;
+	}
+}
+// 信息栏样式
+.info {
+	padding: 50px;
+	.container {
+		max-width: 910px;
+		.item {
+			margin-top: 20px;
+			a {
+				color: grey;
+				&:hover {
+					color: red;
+				}
+				.wjsfont {
+					font-size: 40px;
+				}
+			}
+		}
+	}
+}
+//微金所预约信息
+.book {
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	padding: 20px;
+	.container {
+		max-width: 910px;
+		.booknow {
+			color: red;
+    		border-bottom: 1px dashed red;
+    		text-decoration: none;
+		}
+		.movie {
+			color: grey;
+			&:hover {
+				color: red;
+			}
+		}
+	}
+}
+//产品信息
+.wjs_products {
+	padding: 0 15px 30px;
+}
+// 标签导航栏
+.wjs-tabs {
+  border-bottom: 1px solid #ddd;
+  padding: 0 15px;
+}
+.wjs-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.wjs-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  color: grey;
+}
+.wjs-tabs > li > a:hover {
+  border-color: #eee #eee #ddd;
+}
+.wjs-tabs > li.active > a,
+.wjs-tabs > li.active > a:hover,
+.wjs-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  // border: 1px solid #ddd;
+  border-bottom: 3px solid #f00;
+}
+.wjs-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.wjs-tabs.nav-justified > li {
+  float: none;
+}
+.wjs-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.wjs-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .wjs-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .wjs-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.wjs-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.wjs-tabs.nav-justified > .active > a,
+.wjs-tabs.nav-justified > .active > a:hover,
+.wjs-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .wjs-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .wjs-tabs.nav-justified > .active > a,
+  .wjs-tabs.nav-justified > .active > a:hover,
+  .wjs-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+
+.product-box {
+	display: block;
+	height: 150px;
+	width: 100%;
+	margin-top: 20px;
+	text-decoration: none;
+	box-shadow: 2px 2px 3px grey;
+	&.active {
+		background-color: red;
+		&::before {
+			font-size: 40px;
+			color: white;
+			position: absolute;
+		}
+		.product-right {
+			p {
+				color: white;
+			}
+		}
+		.product-content {
+			h3 {
+				color: white;
+			}
+			div {
+				p {
+					color: white;
+				}
+			}
+		}
+	}
+	.product-right {
+		float: right;
+		width: 108px;
+		height: 100%;
+		padding-top: 30px;
+		border-left: 1px dashed grey;
+		position: relative;
+		p {
+			text-align: center;
+			font-family: "微软雅黑";
+			font-weight: 900;
+			color: grey;
+		}
+		&::before {
+			position: absolute;
+			content: "";
+			width: 20px;
+			height: 20px;
+			border-radius: 10px;
+			left: -10px;
+			top: -10px;
+			background-color: #fff;
+		}
+		&::after {
+			position: absolute;
+			content: "";
+			width: 20px;
+			height: 20px;
+			border-radius: 10px;
+			left: -10px;
+			bottom: -10px;
+			background-color: #fff;
+		}
+	}
+	.product-content {
+		overflow: hidden;
+		&>div {
+			margin-bottom: 5px;
+			p {
+				color: grey;
+				font-size: 12px;
+				height: 20px;
+				font-weight: 900;
+				font-family: "微软雅黑";
+				margin: 0;
+				padding: 3px;
+			}
+		}
+		&>div:nth-of-type(2n){
+			p {
+				text-align: right;
+			}
+		}
+		&>div:nth-of-type(2n-1){
+			p {
+				text-align: left;
+			}
+		}
+		h3 {
+			text-align: center;
+			height: 16px;
+			font-size: 16px;
+			font-family: "微软雅黑";
+			font-weight: 900;
+			line-height: 16px;
+			color: grey;
+		}
+	}
+}
+// 新闻页签
+.news {
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	.row>div {
+		h3 {
+			text-align: center;
+			font-size: 24px;
+			line-height: 40px;
+			height: 50px;
+			border-bottom: 1px solid grey;
+			position: relative;
+			&::before {
+				position: absolute;
+				content: "";
+				width: 8px;
+				height: 8px;
+				border: 1px solid grey;
+				border-radius: 4px;
+				background-color: #fff;
+				right: 0;
+				bottom: -4px;
+			}
+		}
+	}
+}
+//新闻页签里面的标签栏
+.wjs-newsTabs {
+	position: relative;
+	margin-top: 20px;
+  // border-bottom: 1px solid #ddd;
+}
+.wjs-newsTabs > li {
+  float: left;
+  width: 100%;
+  // margin-bottom: -1px;
+}
+@media screen and (max-width: 992px) {
+	.wjs-newsTabs > li {
+		float: left;
+		width: 25%;
+	}
+	.wjs-newsTabs .line{
+		display: none;
+	}
+}
+.wjs-newsTabs > li > a {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 40px;
+  background-color: #ccc;
+  margin-bottom: 60px;
+  color: #fff;
+}
+.wjs-newsTabs > li:last-child > a {
+	margin-bottom: 0;
+}
+.wjs-newsTabs > li > a:hover {
+  // border-color: #eee #eee #ddd;
+  background-color: red;
+}
+.wjs-newsTabs > li.active > a,
+.wjs-newsTabs > li.active > a:hover,
+.wjs-newsTabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #f00;
+  // border: 1px solid #ddd;
+  // border-bottom-color: transparent;
+  color: #fff;
+}
+.wjs-newsTabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.wjs-newsTabs.nav-justified > li {
+  float: none;
+}
+.wjs-newsTabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.wjs-newsTabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .wjs-newsTabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .wjs-newsTabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.wjs-newsTabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.wjs-newsTabs.nav-justified > .active > a,
+.wjs-newsTabs.nav-justified > .active > a:hover,
+.wjs-newsTabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .wjs-newsTabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .wjs-newsTabs.nav-justified > .active > a,
+  .wjs-newsTabs.nav-justified > .active > a:hover,
+  .wjs-newsTabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+.wjs-newsTabs .line {
+	position: absolute;
+	width: 0;
+	border: 1px dashed grey;
+	height: 80%;
+	left: 35px;
+	top: 2px;
+}
+.news {
+	.tab-content {
+		ul {
+			margin-top: 20px;
+			margin-bottom: 10px;
+			list-style: none;
+
+			li {
+				padding: 10px 0;
+				a {
+					color: grey;
+				}
+			}
+		}
+	}
+}
+
+// 公司合作伙伴
+.friend-company {
+	h3 {
+		text-align: center;
+	}
+	ul {
+		list-style: none;
+		display: inline-block;
+		li {
+			float: left;
+			padding: 0 20px;
+			a {
+				font-size: 70px;
+				color: grey;
+				text-decoration: none;
+			}
+		}
+	}
+}
